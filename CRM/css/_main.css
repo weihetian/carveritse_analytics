@@ -1,0 +1,92 @@
+body {
+    width: 100%;
+    height: 100%;
+
+}
+
+html {
+    width: 100%;
+    height: 100%;
+
+	overflow:hidden;
+}
+
+.left_bar
+{
+	position:absolute;
+	width:18%;
+	left:0;
+	top:0;
+	background-color:#2c3e50;
+	height:100%;
+	color:white;
+}
+
+.main_body{
+	position:absolute;
+	width:82%;
+	left:18%;
+	top:0;
+	height:100%;
+	background-color:#DADFE1;
+	overflow:scroll;
+}
+
+.user_info
+{
+	padding:10px;
+}
+
+.menu_area
+{
+	position:relative;
+	top:10%;
+	
+	text-align:center;
+}
+
+.menu_item
+{
+
+	cursor:pointer;
+	padding:20px;
+	cursor:pointer;
+}
+
+.menu_campaigns
+{
+	
+}
+
+.menu_campaigns:hover
+{
+	color:#2c3e50;
+	background-color:#DADFE1;
+}
+
+.campaigns_area
+{
+	padding:20px;
+	margin:10px;
+	background-color:white;
+	 box-shadow: 0px 0px 5px #888888;
+}
+
+.single_campaign
+{
+	padding:10px 0px;
+	margin:10px 0px;
+	border-left:4px solid #2c3e50;
+	background-color:#ecf0f1;
+	cursor:pointer;
+}
+
+.single_campaign:hover
+{
+	background-color:#bdc3c7;
+}
+
+.title_row
+{
+	font-weight:bold;
+}

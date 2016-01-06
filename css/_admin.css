@@ -1,0 +1,661 @@
+@font-face {
+    font-family: 'museo_sans500';
+    src: url('../fonts/museosans_500_macroman/MuseoSans_500-webfont.eot');
+    src: url('../fonts/museosans_500_macroman/MuseoSans_500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/museosans_500_macroman/MuseoSans_500-webfont.woff') format('woff'),
+         url('../fonts/museosans_500_macroman/MuseoSans_500-webfont.ttf') format('truetype'),
+         url('../fonts/museosans_500_macroman/MuseoSans_500-webfont.svg#museo_sans500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'BebasNeueBold';
+    src:  url('../fonts/BebasNeue Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;}
+	
+	@font-face {
+    font-family: 'BebasNeueRegular';
+    src:  url('../fonts/BebasNeue Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;}
+	
+	
+	@font-face {
+    font-family: 'PermanentMarker';
+    src:  url('../fonts/PermanentMarker.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;}
+    
+
+#left_summary h4
+{
+font-size:25px! important;
+font-family: "BebasNeueRegular", Arial, Helvetica, sans-serif;
+letter-spacing: 1px;
+}
+
+.btn
+{
+
+	font-family: "BebasNeueRegular", Arial, Helvetica, sans-serif;
+	font-size:17px! important;
+	 letter-spacing: 1px;
+background-color:rgba(97,153,174,0.7)! important;
+color:004059! important;
+border-color:white;
+}
+
+.btn:hover
+{
+background-color:#004059! important;
+color:white! important;
+border-color:#004059;
+}
+
+.selected { background-color:#004059! important;
+color:white! important;
+border-color:white! important;} 
+
+
+.main h3
+{
+color:#004059;
+	font-family: "BebasNeueBold", Arial, Helvetica, sans-serif;
+   	font-size: 30px;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+.navbar a
+{
+
+color:white;
+	font-family: "BebasNeueRegular", Arial, Helvetica, sans-serif;
+   	font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+    
+.campaign_left a
+{
+
+color:#6199AE;
+   	font-size: 15px;
+/* 
+    font-weight: 200;
+    letter-spacing: 2px;
+ */
+}
+
+
+    
+body {
+
+}
+    
+.navbar-default{
+background-color:#004059;
+border-color:#004059;
+height:50px;
+padding-left:50px;
+padding-right:50px;
+padding-top:5px;
+margin-bottom:0px ;
+box-shadow: 0px 1px 5px #888888;
+}
+
+
+
+.navbar-nav
+{
+height:40px;
+}
+
+.nav-car
+{
+	font-family: "BebasNeueBold", Arial, Helvetica, sans-serif;
+color:white;
+letter-spacing:3px;
+    font-size: 30px;
+}
+
+.nav-ver
+{	font-family: "BebasNeueBold", Arial, Helvetica, sans-serif;
+color:white;
+letter-spacing:3px;
+    font-size: 30px;
+}
+
+.nav-analytics
+{
+font-family: "museo_sans500", Arial, Helvetica, sans-serif;
+color:white;
+letter-spacing:1px;
+    font-size: 20px;
+}
+
+#index_main
+{
+position:fixed;
+width:100%;
+height:100vh;
+        background: url(../img/Penguin1.jpg)no-repeat center center fixed; 
+	background-position:top -150px;
+      background-size: 100%;
+      background-repeat: no-repeat; 
+}
+
+.container
+{
+
+height:100%;
+}
+
+.main
+{
+padding-top: 50px;
+height:100%;
+font-family: "museo_sans500", Arial, Helvetica, sans-serif;
+padding-left:50px;
+padding-right:50px;
+}
+
+.main_container
+{
+
+
+
+}
+
+
+#left_summary small
+{
+color:#6199AE;
+}
+
+
+#left_summary
+{
+color:#004059;
+border-right: 1px solid #D8D8D8 ;
+background-color:#F8F8F8;
+height:100%;
+}
+
+#right_dashborad
+{
+height:100%;
+}
+
+#dashborad
+{
+height:100%;
+ overflow: auto;
+ padding-top:20px;
+}
+
+#drivermanager_dashboard
+{
+
+height:100%;
+ overflow: auto;
+}
+
+
+#dashborad h4
+{
+
+	font-family: "BebasNeueRegular", Arial, Helvetica, sans-serif;
+color:#004059;
+letter-spacing:1px;
+    font-size: 22px;
+}
+
+#dashborad small
+{
+color:004059;
+}
+
+#carlist
+{
+color:#004059;
+font-family: "museo_sans500", Arial, Helvetica, sans-serif;
+height:100%;
+
+overflow: auto;
+ 
+}
+
+
+#campaignlist
+{
+color:#004059;
+font-family: "museo_sans500", Arial, Helvetica, sans-serif;
+height:100%;
+
+border-right: 1px solid #D8D8D8 ;
+ overflow: auto;
+}
+
+
+#campaigncarlist
+{
+font-family: "museo_sans500", Arial, Helvetica, sans-serif;
+height:100%;
+color:#004059;
+overflow: auto;
+}
+
+#driverlist
+{
+font-family: "museo_sans500", Arial, Helvetica, sans-serif;
+height:100%;
+
+border-right: 1px solid #D8D8D8 ;
+ overflow: auto;
+}
+
+#campaignsinglecar
+{
+font-family: "museo_sans500", Arial, Helvetica, sans-serif;
+height:100%;
+color:#004059;
+overflow: auto;
+
+border-left: 1px solid #D8D8D8 ;
+}
+
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+.table_area
+{
+height:250px;
+overflow: scroll;
+}
+
+.table_area2
+{
+height:300px;
+overflow: scroll;
+}
+
+.a_car
+{
+margin-top:10px;
+margin-bottom:10px;
+height:70px;
+padding-left:5px;
+padding-top:5px;
+padding-bottom:5px;
+background-color:#F8F8F8;
+
+/* 
+border-top: 1px solid #D8D8D8 ;
+border-bottom: 1px solid #D8D8D8 ;
+border-left: 1px solid #D8D8D8 ;
+border-right: 1px solid #D8D8D8 ;
+ */
+overflow-y:auto;
+overflow-x:hidden;
+}
+
+.carlist_area
+{
+/* 
+border-top: 1px solid #D8D8D8 ;
+border-bottom: 1px solid #D8D8D8 ;
+border-left: 1px solid #D8D8D8 ;
+border-right: 1px solid #D8D8D8 ;
+ */
+	margin-bottom:50px;
+}
+
+
+.a_campaign
+{
+padding-left:10px;
+padding-top:5px;
+padding-bottom:5px;
+border-top: 1px solid #D8D8D8 ;
+border-bottom: 1px solid #D8D8D8 ;
+border-left: 1px solid #D8D8D8 ;
+border-right: 1px solid #D8D8D8 ;
+
+}
+
+.a_campaign_car
+{
+padding-left:10px;
+padding-top:5px;
+padding-bottom:5px;
+border-top: 1px solid #D8D8D8 ;
+border-bottom: 1px solid #D8D8D8 ;
+border-left: 1px solid #D8D8D8 ;
+border-right: 1px solid #D8D8D8 ;
+
+}
+
+.a_campaign_car:hover{
+   background-color:#D8D8D8;
+   
+ 
+}
+
+
+
+.a_campaign:hover{
+
+ background-color:#D8D8D8;
+}
+
+
+.a_car:hover{
+
+ background-color:#D8D8D8;
+ border-color:#B8B8B8;
+}
+
+.icon_button:hover
+{
+color:red;
+}
+
+.profile
+{
+height:0px;
+padding-left:10px;
+}
+
+
+#citytable
+{
+font-size:13px;
+}
+
+#hourtable
+{
+font-size:13px;
+}
+
+#drivertable
+{
+font-size:13px;
+}
+
+.log_in
+{
+
+font-family: "museo_sans500", Arial, Helvetica, sans-serif;
+color:#A7A9AB;
+letter-spacing:1px;
+    font-size: 40px;
+}
+.main_left
+{
+}
+
+
+.login_area
+{
+padding-bottom:30px;
+padding-left:50px;
+padding-right:50px;
+margin-top:100px;
+background-color:rgba(97,153,174,0.7);
+}
+
+.login_area h1
+{
+	font-family: "BebasNeueBold", Arial, Helvetica, sans-serif;
+color:#004059;
+letter-spacing:2px;
+    font-size: 40px;
+}
+
+.login_area small
+{
+color:white;
+}
+
+
+.index_row
+{
+
+}
+
+.campaign_left
+{
+position:fixed;
+left:50px;
+width:15%;
+}
+
+.campaign_right
+{
+
+padding-bottom:100px;
+}
+
+#home h2
+{
+color:#004059;
+}
+
+
+
+.fa
+{
+width:40px;
+}
+.top
+{
+
+}
+
+#myTab a
+{
+ margin: 0 0 20px;
+}
+
+#tracking{
+ width: 100%;
+ height: 500px;
+}			
+				
+#map-canvas{
+ width: 100%;
+ height: 500px;
+}
+
+
+#heat-map{
+text-align:center;
+ width: 100%;
+ height: 500px;
+}
+
+#ui-datepicker-div { font-size:11px; }
+
+
+.clickableRow
+{
+cursor: pointer;
+}
+
+.hidden
+{
+display:none;
+}
+
+.proof img
+{
+width:80%;
+}
+
+.tooltip{
+		margin:8px;
+		padding:8px;
+		border:1px solid blue;
+		background-color:yellow;
+		position: absolute;
+		z-index: 2;
+	}
+
+.box
+{
+
+}
+
+.citylist
+{
+text-align:center;
+}
+
+#thedevices
+{
+
+padding-left:5px;
+}
+
+#thedevices label
+{
+
+font-size:12px;
+}
+
+
+#thedevices label:hover
+{
+font-size:15px;
+color:#6199AE;
+}
+
+
+
+ul
+{
+list-style-type: none;
+}
+
+.citylist li
+{
+font-size:12px;
+list-style-type:none
+}
+
+.panel-heading
+{
+color:#004059! important;
+ letter-spacing:1px;
+font-size:20px;
+	font-family: "BebasNeueBold", Arial, Helvetica, sans-serif;
+
+}
+
+.panel
+{
+
+}
+
+.panel:hover
+{
+ 
+}
+
+#namepanel
+{
+font-size: 25px;
+
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+
+.mappic
+{
+width:100px;
+}
+
+.middle_layer
+{
+	position:fixed;
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+	z-index:5;
+	display:none;
+	background-color:rgba(0,0,0,0.6);
+}
+
+.group_area_container
+{
+	position:fixed;
+	width:50%;
+	height:70%;
+	top:10%;
+	left:25%;
+	z-index:6;
+	display:none;
+	background-color:white;
+	padding:20px;
+	border-radius:10px;
+	
+}
+
+.zipcode_body
+{
+	height:60%;
+	overflow:scroll;
+}
+
+.area_body_container
+{
+	height:60%;
+	overflow:scroll;
+}
+
+
+.add_area_btn
+{
+	font-weight:bold;
+	cursor:pointer;
+}
+
+.add_area_btn:hover{
+	color:red;
+}
+
+.singlezip
+{
+	cursor:pointer;
+	padding:0px 5px;
+	
+}
+
+.singlezip:hover
+{
+	border-left:4px solid red;
+}
+
+.area_div
+{
+	cursor:pointer;
+	padding:0px 5px;
+	
+}
+
+.area_div:hover
+{
+	border-left:4px solid red;
+}
+
+
+
+@media (max-width: @screen-sm-max) { ... }

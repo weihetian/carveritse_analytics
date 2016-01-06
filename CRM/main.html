@@ -1,0 +1,18 @@
+<div class='campaigns_area' ng-controller="CampaignController">
+	<div class='row title_row'>
+		<div class='col-md-1'>id</div>
+			<div class='col-md-3'>campaign_name</div>
+			<div class='col-md-2'>campaign_account</div>
+			<div class='col-md-2'>campaign_start_date</div>
+			<div class='col-md-2'>campaign_end_date</div>
+	</div>
+	<div class='single_campaign row' ng-repeat= "campaign in campaigns" ng-click="campaign_analytics(campaign.id)">
+		<div class='col-md-1'>{{campaign.id}} </div>
+			<div class='col-md-3'>{{campaign.name}}</div>
+			<div class='col-md-2'>{{campaign.account}}</div>
+			<div class='col-md-2'>{{campaign.start}}</div>
+			<div class='col-md-2'>{{campaign.end}}</div>
+		
+	</div>
+	
+</div>

@@ -1,0 +1,87 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html">
+    <title>admin</title>
+	<link href="css/_admin.css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+	 <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="main">
+<div class="container">
+    <div class="row">
+    	<div class="container">
+		<div class="page-header">
+			<h1>Carvertise</h1>
+			
+		</div> 
+		<div class="col-xs-6 col-md-4 col-md-offset-4">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+				Admin Login
+				</div>
+				<div class="panel-body">
+				
+					<form action="admin_log_in.php" method="post">
+					
+					<div class="input-group input-group">
+						<span class="input-group-addon">Account</span>
+						<input type="text" id="account" name='account' class="form-control" placeholder="Account">
+					</div>
+					<br>
+					<div class="input-group input-group">
+						<span class="input-group-addon">Password</span>
+						<input type="password" id="password" name='password' class="form-control" placeholder="Password">
+					</div>
+					<br>
+					<button id="submit" type="button" class="btn btn-primary">
+						Log in
+					</button>
+					
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/
+libs/jquery/1.3.0/jquery.min.js">
+</script>
+
+<script type="text/javascript" >
+$(function() {
+$("#submit").click(function() {
+var account = $("#account").val();
+var password = $("#password").val();
+var dataString = 'account='+ account + '&password=' + password;
+
+if(account=='' || password=='')
+{
+alert("please check your info");
+}
+else
+{
+$.ajax({
+ type: "POST",
+  url: "admin_log_in.php",
+  datatype: "html",
+  data: dataString,
+  success: function(data) {
+	if($.trim(data)=="succeed")
+	{
+		location.replace("console.php");
+	}else{
+    alert(data);}
+    }
+});
+}
+return false;
+});
+});
+</script>
+</body>
+
+</html>
